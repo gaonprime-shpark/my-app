@@ -1,4 +1,4 @@
-import { ChangeEvent, useState, KeyboardEvent, FC, InputHTMLAttributes } from 'react';
+import { ChangeEvent, useState, KeyboardEvent } from 'react';
 
 export interface Props {
   className?: string;
@@ -11,7 +11,7 @@ export interface Props {
   disabled?: boolean;
 }
 
-const TextInput: FC<Props> = ({
+function TextInput({
   className,
   placeholder,
   onChange,
@@ -20,12 +20,11 @@ const TextInput: FC<Props> = ({
   onKeyDown,
   value = '',
   disabled = false,
-}) => {
+}: Props) {
   const [text, setText] = useState(value);
 
   const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
     const value = ev.target.value;
-    console.log(value);
     setText(value);
     onChange({ value });
   };
@@ -43,6 +42,6 @@ const TextInput: FC<Props> = ({
       disabled={disabled}
     />
   );
-};
+}
 
 export default TextInput;
