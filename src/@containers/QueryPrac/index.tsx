@@ -58,6 +58,8 @@ const QueryPrac = () => {
     console.log(datas);
     console.log(datas);
     console.log(datas);
+    console.log(datas);
+    console.log(datas);
   }, [data, datas]);
 
   //   useEffect(() => {
