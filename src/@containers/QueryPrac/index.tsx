@@ -56,6 +56,8 @@ const QueryPrac = () => {
     data && setList((prev) => [...data.data]);
     console.log('datas');
     console.log(datas);
+    console.log(datas);
+    console.log(datas);
   }, [data, datas]);
 
   //   useEffect(() => {
