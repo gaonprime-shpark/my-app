@@ -13,6 +13,8 @@ const FormPrac = () => {
   const onSubmit = (data: any) => {
     console.log('data');
     console.log(data);
+    console.log(data);
+    console.log(data);
   };
 
   //useForm prop
