@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.card {
+  @apply relative overflow-hidden bg-white rounded shadow-md;
+}
+
+.badge {
+  @apply absolute top-0 p-2 mt-2 ml-2 text-xs font-bold uppercase rounded-full bg-secondary-100 text-secondary-200;
+}
+
+.btn {
+  @apply px-3 py-2 text-xs font-bold tracking-wider uppercase rounded-full cursor-pointer;
+}
+
+input {
+  background-color: antiquewhite;
+}
