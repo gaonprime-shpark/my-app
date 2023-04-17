@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface BtnInterface {
-  OnClick: () => void;
-  text: string;
-}
+import { BtnInterface } from './Btn.interface';
 
 const Btn = ({ OnClick, text }: BtnInterface) => {
   return (
