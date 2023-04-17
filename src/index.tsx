@@ -7,6 +7,7 @@ import { RecoilRoot } from 'recoil';
 import { RootRouter } from './@route';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 const queryClinet = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
@@ -17,6 +18,7 @@ root.render(
         <RootRouter />
       </BrowserRouter>
     </RecoilRoot>
+    <ReactQueryDevtools initialIsOpen />
   </QueryClientProvider>,
 );
 
