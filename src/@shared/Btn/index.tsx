@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface BtnInterface {
-  OnClick: () => void;
+  OnClick: any;
   text: string;
 }
 
